@@ -14,8 +14,6 @@ public class Book {
 		this.stateCode = 1;
 	}
 	
-	
-	
 	public int getNo() {
 		return no;
 	}
@@ -70,7 +68,7 @@ public class Book {
 	}
 	
 	public void print() {
-		System.out.println("책 제목:"+ title + ", 작가:" + author + ", 대여유무:"+ (stateCode == 1 ? "재고있음" : "대여중"));
+		System.out.println("[" + no + "]" + "책 제목:"+ title + ", 작가:" + author + ", 대여유무:"+ (stateCode == 1 ? "재고있음" : "대여중"));
 	}
 
 }

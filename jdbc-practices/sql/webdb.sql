@@ -22,12 +22,16 @@ update dept set name = '서비스개발팀' where id = 2;
 
 desc email;
 
+-- count
+select count(*) from email;
 
 -- findAll
+select id, first_name, last_name, email from email order by id desc;
 
 -- deleteByEmail
+delete from email where email = 'dooly@gmail.com';
 
 -- insert
-insert into email
+insert into email(first_name, last_name, email) values ('둘', '리', 'dooly@gmail.com');
 
 

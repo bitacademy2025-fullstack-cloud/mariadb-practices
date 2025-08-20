@@ -16,7 +16,9 @@ public class BookShop {
 		books[7] = new Book(8,"귀천","천상병");
 		books[8] = new Book(7,"태백산맥","조정래");
 		books[9] = new Book(5,"풀하우스","원수연");
-		
+
+		displayBooks(books);
+
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("대여 하고 싶은 책의 번호를 입력하세요:");
 		int num = scanner.nextInt();
@@ -30,11 +32,11 @@ public class BookShop {
 		}
 		
 		// (2)Book 객체의 정보를 출력
-		System.out.println("*****도서 정보 출력하기******");
 		displayBooks(books);
 	}
 
 	private static void displayBooks(Book[] books) {
+		System.out.println("*****도서 정보 출력하기******");
 		for (int i = 0; i < books.length; i++) {
 			books[i].print();
 		}
